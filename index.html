@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Van Slyke Art :: Home</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Header Section -->
+    <header>
+      <h1>Van Slyke Art</h1>
+      <nav>
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li><a href="commission.html">Commissions</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Home Section -->
+    <section id="home" class="dashboard">
+      <h2>Featured Works</h2>
+      <div class="featured-images">
+        <img src="path/to/featured1.jpg" alt="Featured Artwork 1" />
+        <img src="path/to/featured2.jpg" alt="Featured Artwork 2" />
+      </div>
+
+      <div class="artist-bio">
+        <h2>About [Artist's Name]</h2>
+        <p>
+          [Artist's Name] is a contemporary artist known for their expressive
+          and unique works. <a href="story.html">Read more...</a>
+        </p>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2>Contact</h2>
+      <p>
+        If you're interested in a piece, commission, or have questions, please
+        reach out below.
+      </p>
+      <form
+        action="mailto:youremail@example.com"
+        method="post"
+        enctype="text/plain"
+      >
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <p>
+        &copy; 2024 [Artist's Name] Fine Art |
+        <a href="https://paypal.me/artist-link" target="_blank"
+          >Support & Commissions</a
+        >
+      </p>
+    </footer>
+  </body>
+</html>

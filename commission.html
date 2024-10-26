@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Van Slyke Art :: Commissions</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header>
+      <h1>Commissions</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="gallery.html">Gallery</a></li>
+          <li><a href="story.html">Story</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Commission Form Section -->
+    <section id="commission">
+      <h2>Commission a Custom Piece</h2>
+      <p>
+        Please fill out the form below with your commission details, and Katie
+        will get back to you with more information.
+      </p>
+      <form action="your-server-script-or-google-form-link" method="post">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="piece-type">Medium:</label>
+        <select id="piece-type" name="piece_type" required>
+          <option value="oil">Oil Painting</option>
+          <option value="acrylic">Acrylic Painting</option>
+          <option value="charcoal">Charcoal Drawing</option>
+          <option value="graphite">Graphite Drawing</option>
+          <!-- Add more types if needed -->
+        </select>
+
+        <label for="description">Description of Your Vision:</label>
+        <textarea id="description" name="description" required></textarea>
+
+        <label for="budget">Budget (optional):</label>
+        <input type="text" id="budget" name="budget" placeholder="$ USD" />
+
+        <button type="submit">Submit Request</button>
+      </form>
+    </section>
+  </body>
+</html>
