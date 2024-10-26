@@ -1,7 +1,62 @@
 @import url('https://fonts.googleapis.com/css2?family=Courier+Prime:ital,wght@0,400;0,700;1,400;1,700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
 :root {
-  --headline: 'Courier Prime', serif;
+  --headline: 'Courier Prime', monospace;
   --paragraph: 'Poppins', sans-serif;
+
+  --sand: #dac9a3;
+  --mint: #697e5f;
+  --pine: #1c251c;
+  --sage: #3b4e3b;
+}
+
+html {
+  background-color: var(--sand);
+}
+
+header {
+  display: grid;
+  grid-template-columns: auto min-content;
+  grid-template-rows: 1fr;
+  font-family: var(--headline);
+  font-size: 3rem;
+  color: var(--pine);
+}
+
+header h1 {
+  display: block;
+  flex-grow: 1;
+  margin: 0;
+}
+
+header nav {
+  text-align: right;
+  padding: 1rem;
+}
+header nav ul {
+  margin: 0;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(5, min-content);
+  list-style: none;
+  padding: 0;
+}
+
+header nav ul li {
+  padding: 0;
+}
+
+header nav a {
+  text-decoration: none;
+  color: var(--pine);
+  font-size: 2rem;
+}
+
+header nav a:visited {
+  color: var(--pine);
+}
+
+header nav a:hover {
+  color: var(--mint);
 }
 
